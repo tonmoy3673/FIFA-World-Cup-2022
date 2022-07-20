@@ -29,7 +29,7 @@ header{
 }
    .banner .banner-img{
     width: 35%;
-    padding-top: 35px;
+    padding-top: 40px;
    
 }
 .title{
@@ -115,6 +115,8 @@ header{
     cursor: pointer;
     font-weight: 600;
     margin: 10px 0;
+    outline: none;
+    border: 0;
     
 }
 .btn-box:hover{
@@ -142,9 +144,6 @@ header{
     width: 280px;
     height: 280px;
     border: 2px solid #c7ecee;
-    
-   
-   
     
    
 }
@@ -207,11 +206,10 @@ span{
     border: 0;
     border-radius: 10px;
 }
+/*--------Footer-----*/
 footer{
     width: 100%;
-    height: 300px;
     background-color: #0D0D0D;
-    
     text-align: center;
     padding: 20px 0;
 }
@@ -263,7 +261,9 @@ hr{
     font-size: 25px;
     color: #2827CC;
 }
-
+.social a:hover{
+    color: #FFC312;
+}
 
 /*------AnOther Page----*/
 .blog .match{
@@ -284,10 +284,16 @@ hr{
     margin-bottom: 10px;
     color: #44bd32;
 }
+.active{
+    background-color: #d63031;
+}
 
 
 /*-----------Responsive For Mobile Device------------------*/
 @media only screen and (max-width:688px) {
+    .container{
+        margin: 0 24px;
+    }
     header{
         height: 700px;
     }
@@ -298,7 +304,7 @@ hr{
 
     }
     .banner .banner-img{
-        width: 50%;
+        width: 70%;
         
     }
     .title{
@@ -310,6 +316,8 @@ hr{
     }
     #box_1{
         justify-self: center;
+        background-color: #f2f2f2;
+        margin-bottom: 50px;
     }
     #box_2{
         display: grid;
@@ -317,6 +325,8 @@ hr{
     }
     .navbar ul li {
         display: block;
+        margin-left: 0;
+        
     }
     .navbar ul li a{
         display: inline-block;
@@ -326,11 +336,52 @@ hr{
         height: auto;
     }
     .social{
-       
+        
         width: 100%;
     }
     .fa-brands{
         margin: 10px;
        
     }
+    #box_2 .blog{
+        width: 100%;
+        height: auto;
+        
+
+    }
+}
+
+/*-----------Responsive For Tablet Device------------------*/
+
+@media only screen and (min-width:689px) and (max-width:991px){
+    .tab{
+        display: block;
+    }
+    #content{
+        flex-direction: column;
+    }
+    #box{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    #box_2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    header{
+        height:auto;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    #box_1{
+        background-color: #f2f2f2;
+        margin-bottom: 50px;
+    }
+
+
 }
