@@ -29,7 +29,7 @@ header{
 }
    .banner .banner-img{
     width: 35%;
-    padding-top: 40px;
+    padding-top: 37px;
    
 }
 .title{
@@ -304,7 +304,8 @@ hr{
 
     }
     .banner .banner-img{
-        width: 70%;
+        width: 77%;
+        
         
     }
     .title{
@@ -322,6 +323,7 @@ hr{
     #box_2{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        
     }
     .navbar ul li {
         display: block;
@@ -340,7 +342,7 @@ hr{
         width: 100%;
     }
     .fa-brands{
-        margin: 10px;
+        margin: 18px 10px;
        
     }
     #box_2 .blog{
@@ -363,6 +365,7 @@ hr{
     #box{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 50px;
 
     }
     #box_2{
@@ -382,6 +385,9 @@ hr{
         background-color: #f2f2f2;
         margin-bottom: 50px;
     }
-
+    .fa-brands{
+        margin: 18px 10px;
+       
+    }
 
 }
